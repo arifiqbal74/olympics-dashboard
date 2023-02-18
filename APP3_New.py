@@ -13,7 +13,7 @@ import numpy as np
 # load data sets
 athletes = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/athlete_events_till_150K.csv') 
 athletes_from_150K = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/athlete_events_from_150K.csv')
-regions = pd.read_csv('https://github.com/arifiqbal74/olympics-dashboard/blob/main/noc_regions.csv')
+regions = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/noc_regions.csv')
 
 print(athletes.head())
 

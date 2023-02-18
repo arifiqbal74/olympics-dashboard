@@ -99,13 +99,19 @@ st.dataframe(subset)
 
 # Creating Visuals
 
-years = athletes_df ['Year']
-medals = athletes_df['Medal']
+#years = athletes_df ['Year']
+#medals = athletes_df['Medal']
 
 # Configure chart
-plt.plot(years, medals)
-plt.xlabel('Years')
-plt.ylabel('Number of medals')
+#plt.plot(years, medals)
+#plt.xlabel('Years')
+#plt.ylabel('Number of medals')
 
 # Display Chart
-plt.show()
+#plt.show()
+
+chart_data = pd.DataFrame(
+        np.random.randn(20, 3),
+        columns=['a', 'b', 'c'])
+    right.header('Line Chart Visual')
+    right.line_chart(chart_data)

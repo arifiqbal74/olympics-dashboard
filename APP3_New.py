@@ -97,3 +97,15 @@ col5.metric('Bronze Medals', bronze_medal)
 subset = athletes_df[athletes_df['Year'] == year]
 st.dataframe(subset)
 
+# Creating Visuals
+
+athletes_df_years = ['Year']
+athletes_df_medals = ['Medal']
+
+# Configure chart
+plt.plot(athletes_df_years, athletes_df_medals)
+plt.xlabel('athletes_df_years')
+plt.ylabel('athletes_df_medals')
+
+# Display Chart
+plt.show()

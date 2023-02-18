@@ -10,11 +10,10 @@ import pandas as pd
 #import seaborn as sns
 import numpy as np
 
-
 # load data sets
-athletes = pd.read_csv('https://github.com/arifiqbal74/olympics-dashboard/blob/244053146f429b1142ce2c1ab122b598b89c6eba/athlete_events_till_150K.csv') 
-athletes_from_150K = pd.read_csv('https://github.com/arifiqbal74/olympics-dashboard/blob/244053146f429b1142ce2c1ab122b598b89c6eba/athlete_events_from_150K.csv')
-regions = pd.read_csv('https://github.com/arifiqbal74/olympics-dashboard/blob/244053146f429b1142ce2c1ab122b598b89c6eba/noc_regions.csv')
+athletes = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/athlete_events_till_150K.csv') 
+athletes_from_150K = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/athlete_events_from_150K.csv')
+regions = pd.read_csv('https://github.com/arifiqbal74/olympics-dashboard/blob/main/noc_regions.csv')
 
 print(athletes.head())
 

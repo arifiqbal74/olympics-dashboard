@@ -99,13 +99,13 @@ st.dataframe(subset)
 
 # Creating Visuals
 
-athletes_df_years = athletes_df ['Year']
-athletes_df_medals = athletes_df['Medal']
+years = athletes_df ['Year']
+medals = athletes_df['Medal']
 
 # Configure chart
-plt.plot(athletes_df_years, athletes_df_medals)
-plt.xlabel('athletes_df_years')
-plt.ylabel('athletes_df_medals')
+plt.plot(years, medals)
+plt.xlabel('Years')
+plt.ylabel('Number of medals')
 
 # Display Chart
 plt.show()

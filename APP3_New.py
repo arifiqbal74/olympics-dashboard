@@ -99,10 +99,9 @@ st.dataframe(subset)
 
 # Creating Visuals
 
-# Add title
-plt.title("Single Line Chart")
+plt.plot(athletes_df['Year'], athletes_df['Medal'])
+plt.xlabel('year')
+plt.ylabel('medal')
+plt.title('Single Line Chart')
 
-sns.lineplot(athletes_df['Year'], athletes_df['Medal")
-
-# Add label for horizontal axis
-plt.xlabel("Year")
+plt.show()

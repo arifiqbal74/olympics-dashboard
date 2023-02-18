@@ -99,9 +99,9 @@ st.dataframe(subset)
 
 # Creating Visuals
 
-plt.plot(athletes_df['Year'], athletes_df['Medal'])
-plt.xlabel('year')
-plt.ylabel('medal')
-plt.title('Single Line Chart')
-
+plt.bar(athletes_df['Year'], athletes_df['Medal'])
+plt.xlabel('years')
+plt.ylabel('medals')
+plt.title('Horizontal Bar Chart')
+plt.xticks(rotation=45)
 plt.show()

@@ -99,12 +99,6 @@ st.dataframe(subset)
 
 # Creating Visuals  
 
-plt.bar(athletes_df['Medal'], subset = athletes_df[athletes_df['Year'] == year]
-plt.xlabel('Medal')
-plt.ylabel('Years')
-plt.title('Bar Chart')
-plt.xticks(rotation=45)
-plt.show()
 
 
 

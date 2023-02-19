@@ -97,7 +97,14 @@ col5.metric('Bronze Medals', bronze_medal)
 subset = athletes_df[athletes_df['Year'] == year]
 st.dataframe(subset)
 
+# Creating Visuals  
 
+plt.bar(athletes_df['Medal'], athletes_df['Year'])
+plt.xlabel('Medals')
+plt.ylabel('Years')
+plt.title('Bar Chart')
+plt.xticks(rotation=45)
+plt.show()
 
 
 

@@ -98,17 +98,8 @@ col5.metric('Bronze Medals', bronze_medal)
 subset = athletes_df[athletes_df['Year'] == year]
 st.dataframe(subset)
 
-# Creating Visuals
 
-#plt.bar(athletes_df['Year'], athletes_df['Medal'])
-#plt.xlabel('years')
-#plt.ylabel('medals')
-#plt.title('Horizontal Bar Chart')
-#plt.xticks(rotation=45)
-#plt.show()
 
-chart_data = pd.DataFrame(
-        np.random.randn(20, 3),
-        columns=['a', 'b', 'c'])
-    right.header('Line Chart Visual')
-    right.line_chart(chart_data)
+
+
+

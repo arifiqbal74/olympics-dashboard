@@ -97,7 +97,7 @@ col5.metric('Bronze Medals', bronze_medal)
 subset = athletes_df[athletes_df['Year'] == year]
 st.dataframe(subset)
 
-# Creating Visuals  
+# Creating Visuals 
 
 Athletes_df_years = St.('year')
 

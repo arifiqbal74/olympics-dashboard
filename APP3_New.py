@@ -97,14 +97,14 @@ subset = athletes_df[athletes_df['Year'] == year]
 st.dataframe(subset)
 
 #Creating Visuals 
-No_of_medal = athletes_df['Medal'].value_counts()
-st.header('Medals Count')
+medal_count = athletes_df['Medal'].value_counts()
+st.header('Medals_count')
 st.set_option('deprecation.showPyplotGlobalUse', False)
-#plt.rcParams['figure.figsize']=[12,6]
+plt.rcParams['figure.figsize']=[12,6]
 colors=['green','yellow','blue']
-fig=plt.bar(x=No_of_medal.index, height=No_of_medal.values, color=colors)
+fig=plt.bar(x=medal_count.index, height=medal_count.values, color=colors)
 
-plt.title('no_of_medals')
+plt.title('medal_count')
 plt.xlabel('Medals')
 plt.ylabel('athletes')
 st.pyplot()

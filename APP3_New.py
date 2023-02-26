@@ -101,8 +101,7 @@ medal_count = athletes_df['Medal'].value_counts()
 st.header('Medals_count')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 plt.figure(figsize=(12,6)
-colors=['green','yellow','blue']
-fig=plt.bar(x=medal_count.index, height=medal_count.values, color=colors)
+
 
 plt.title('medal_count')
 plt.xlabel('Medals')

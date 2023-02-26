@@ -79,7 +79,7 @@ inc_medals = -4
 
 country_count = 14
 inc_count = 5
-countries = athletes_df['Region'].nunique()
+#countries = athletes_df['Region'].nunique()
 gold_medals = 13732
 Silver_medal = 13116
 bronze_medal = 13295 

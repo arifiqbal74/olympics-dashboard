@@ -99,7 +99,7 @@ st.dataframe(subset)
 
 # Creating Visuals 
 
-Athletes_df_years = St.('year')
+Athletes_df_years = St.('Year')
 
 Athletes_df_medals = St.('medal')
 

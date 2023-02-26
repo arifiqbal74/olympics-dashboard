@@ -96,7 +96,7 @@ col5.metric('Bronze Medals', bronze_medal)
 subset = athletes_df
 st.dataframe(subset)
 
-# Creating Visuals 
+#Creating Visuals 
 
 
 

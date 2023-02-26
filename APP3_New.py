@@ -94,10 +94,20 @@ col4.metric('Silver Medals', Silver_medal)
 col5.metric('Bronze Medals', bronze_medal)
 
 subset = athletes_df[athletes_df['Year'] == year]
-#st.dataframe(subset)
+st.dataframe(subset)
 
 #Creating Visuals 
+No_of_medal = athletes_df['Medal'].value_counts()
+st.header('Medals Count')
+st.set_option('deprecation.showPyplotGlobalUse', False)
+plt.rcParams['figure.figsize']=[12,6]
+colors=['green','yellow','blue']
+fig=plt.bar(x=No_of_medal.index, height=No_of_medal.values, color=colors)
 
+plt.title('no_of_medals')
+plt.xlabel('Medals')
+plt.ylabel('athletes')
+st.pyplot()
 
 
 

@@ -93,7 +93,7 @@ col3.metric('Gold Medals', gold_medals)
 col4.metric('Silver Medals', Silver_medal)
 col5.metric('Bronze Medals', bronze_medal)
 
-subset = athletes_df[athletes_df]
+subset = athletes_df
 st.dataframe(subset)
 
 # Creating Visuals 

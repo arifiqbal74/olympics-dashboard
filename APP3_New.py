@@ -98,11 +98,11 @@ st.dataframe(subset)
 
 #Creating Visuals 
 
-top_five_sports= data.groupby('Sport')['Medal'].value_counts().sort_values(asc)
-st.header('Medals')
-new = pd.Dataframe(top_five_sports)
-new.head(5)
-st.table(new.head(5))
+top_five_sports= athletes_df.groupby('Sport')['Medal'].value_counts().sort_values(ascending=True)
+    st.header('Medals')
+    new = pd.Dataframe(top_five_sports)
+    new.head(5)
+    st.table(new.head(5))
 
 
 

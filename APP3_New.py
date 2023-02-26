@@ -100,7 +100,7 @@ st.dataframe(subset)
 No_of_medal = athletes_df['Medal'].value_counts()
 st.header('Medals Count')
 st.set_option('deprecation.showPyplotGlobalUse', False)
-plt.rcParams['figure.figsize']=[12,6]
+#plt.rcParams['figure.figsize']=[12,6]
 colors=['green','yellow','blue']
 fig=plt.bar(x=No_of_medal.index, height=No_of_medal.values, color=colors)
 

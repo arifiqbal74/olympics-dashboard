@@ -93,20 +93,12 @@ col3.metric('Gold Medals', gold_medals)
 col4.metric('Silver Medals', Silver_medal)
 col5.metric('Bronze Medals', bronze_medal)
 
-subset = athletes_df[athletes_df['Year'] == year]
+subset = athletes_df[athletes_df]
 st.dataframe(subset)
 
 # Creating Visuals 
 
-#Athletes_df_years = St.('Year')
 
-#Athletes_df_medals = St.('medal')
-
-#Plt.bar(athletes_df_medals, athletes_df_years)
-
-#Plt.xlabel('medals')
-#Plt.ylabel('years')
-#plt.show()
 
 
 

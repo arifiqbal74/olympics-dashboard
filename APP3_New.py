@@ -93,12 +93,6 @@ col3.metric('Gold Medals', gold_medals)
 col4.metric('Silver Medals', Silver_medal)
 col5.metric('Bronze Medals', bronze_medal)
 
-with st.container():
-    left, right = st.columns(2)
-    # for dataframe styling, e.g. highlighting max values in a df, refer to the following link: https://docs.streamlit.io/library/api-reference/data/st.dataframe
-    df = pd.DataFrame(np.random.randn(10, 10), columns=('col %d' % i for i in range(10)))
-    left.header('Tabular View')
-    left.dataframe(df.style.highlight_max(axis=0))
 
 #subset = athletes_df[athletes_df['Year'] == year]
 #st.dataframe(subset)

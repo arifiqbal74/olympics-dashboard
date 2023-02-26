@@ -97,16 +97,12 @@ subset = athletes_df[athletes_df['Year'] == year]
 st.dataframe(subset)
 
 #Creating Visuals 
-medal_count = athletes_df['Medal'].value_counts()
-st.header('Medals_count')
-st.set_option('deprecation.showPyplotGlobalUse', False)
-plt.figure(figsize=(12,6)
 
-
-plt.title('medal_count')
-plt.xlabel('Medals')
-plt.ylabel('athletes')
-st.pyplot()
+top_five_sports= data.groupby('Sport')['Medal'].value_counts().sort_values(asc)
+st.header('Medals')
+new = pd.Dataframe(top_five_sports)
+new.head(5)
+st.table(new.head(5))
 
 
 

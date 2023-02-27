@@ -97,7 +97,20 @@ subset = athletes_df[athletes_df['Year'] == year]
 st.dataframe(subset)
 
 #Creating Visuals 
+# Get the data
+x = athletes_df['Year']
+y = athletes_df['Medal']
 
+# Create the plot
+plt.plot(x, y)
+
+# Add labels and title
+plt.title('Number of Medals Over Years')
+plt.xlabel('Year')
+plt.ylabel('Medal')
+
+# Show the plot
+plt.show()
 
 
 

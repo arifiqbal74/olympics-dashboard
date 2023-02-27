@@ -6,9 +6,9 @@ Created on Sun Feb 12 21:53:12 2023
 """
 
 import pandas as pd
-#import seaborn as sns
+import seaborn as sns
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 # load data sets
 athletes = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/athlete_events_till_150K.csv') 
@@ -97,19 +97,12 @@ subset = athletes_df[athletes_df['Year'] == year]
 st.dataframe(subset)
 
 #Creating Visuals 
-# Get the data
-x = athletes_df['Year']
-y = athletes_df['Medal']
 
-# Create the plot
-plt.plot(x, y)
-
-# Add labels and title
-plt.title('Number of Medals Over Years')
-plt.xlabel('Year')
-plt.ylabel('Medal')
-
-# Show the plot
+sns.set(style="whitegrid") 
+ax = sns.barplot(x="Name", y="Medal", data=data, palette="GnBu_d") 
+plt.title("Medals Won Over 120 Years of Olympic History")
+plt.xlabel("Name")
+plt.ylabel("Number of Medals Won")
 plt.show()
 
 

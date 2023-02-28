@@ -76,14 +76,14 @@ subset = athletes_df[athletes_df['Team'] == selection]
 st.dataframe(subset)
 
 # the metric component takes the value you want to show and the change from a prev. value (it shows it as up/down arrow based on the change value)
-curr_count = 100
-inc_count = 10
+#curr_count = 100
+#inc_count = 10
 
-curr_medals = 50
-inc_medals = -4
+#curr_medals = 50
+#inc_medals = -4
 
-country_count = 14
-inc_count = 5
+#country_count = 14
+#inc_count = 5
 #countries = athletes_df['Region'].nunique()
 gold_medals = 13732
 Silver_medal = 13116

@@ -93,17 +93,12 @@ col3.metric('Gold Medals', gold_medals)
 col4.metric('Silver Medals', Silver_medal)
 col5.metric('Bronze Medals', bronze_medal)
 
-subset = athletes_df[athletes_df['Year'] == year]
-st.dataframe(subset)
+#subset = athletes_df[athletes_df['Year'] == year]
+#st.dataframe(subset)
 
 #Creating Visuals 
 
-sns.set(style="whitegrid") 
-ax = sns.barplot(x="Name", y="Medal", data=data, palette="GnBu_d") 
-plt.title("Medals Won Over 120 Years of Olympic History")
-plt.xlabel("Name")
-plt.ylabel("Number of Medals Won")
-plt.show()
+
 
 
 

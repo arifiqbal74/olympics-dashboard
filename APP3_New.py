@@ -71,8 +71,8 @@ st.title('Olympics Dashboard')
 year = st.selectbox('Select Country', athletes_df['Team'])
 
 countries = athletes_df['Team'].unique()
-selection = st.selectbox('Select Country', countries)
-subset = athletes_df[athletes_df['Team'] == selection]
+year = st.selectbox('Select Country', countries)
+subset = athletes_df[athletes_df['Team'] == year]
 st.dataframe(subset)
 
 # the metric component takes the value you want to show and the change from a prev. value (it shows it as up/down arrow based on the change value)
